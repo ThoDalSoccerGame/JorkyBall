@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JorkyBall", "JorkyBall\JorkyBall.vcxproj", "{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Debug|x64.ActiveCfg = Debug|x64
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Debug|x64.Build.0 = Debug|x64
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Debug|x86.Build.0 = Debug|Win32
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Release|x64.ActiveCfg = Release|x64
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Release|x64.Build.0 = Release|x64
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Release|x86.ActiveCfg = Release|Win32
+		{E1E958BD-2AF2-4C03-9B36-C569F7AB4540}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E1DBA45-764A-4BF3-967C-76F063F0384D}
+	EndGlobalSection
+EndGlobal
