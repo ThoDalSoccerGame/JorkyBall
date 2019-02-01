@@ -6,6 +6,9 @@
 using namespace std;
 using namespace sf;
 
+/* C'est dans le .cpp que tu incluts le corps des fonctions */
+// A définir l'ensemble des fonctions utiles au classes*/
+
 /* Créateur et destructeur de la classe Cage */
 Cage::Cage()
 {
