@@ -11,5 +11,15 @@ using namespace sf;
 
 int main()
 {
+// BLOC CONNECTION
+	// BLOC MENU
+		// HORS LIGNE 
+			// BLOC SOLO
+			// BLOC MULTI
+		// EN LIGNE
+			// JEU EN LIGNE
+		// MODE
+		// SKIN
+		
 	return 0;
 }
