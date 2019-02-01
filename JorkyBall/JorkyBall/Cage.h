@@ -1,8 +1,11 @@
-/* Head de la classe Cage du jeu soccer game */
+/* Head de la classe Cage du jeu jorkyball */
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
+
+#ifndef CAGE_H
+#define CAGE_H
 
 class Cage
 {
@@ -14,7 +17,7 @@ public:
 
 	/********************** Méthode de la classe Cage **********************/
 	/* Création du visuel de la cage */
-	void create_Cage();
+	void create_Cage(int sens);
 
 	/* Renvoie une force auparavant reçu */
 	double return_Force();
@@ -27,5 +30,13 @@ public:
 
 private:
 
+	// 0 => cage de droite et 1 => cage de gauche
+	int sens;
+
+	double force_renvoyer;
+	double force_recu;
+
 	// Les attributs seront évalué plus tard /!\ Gwendal réfléchit à la collision !!!!!!
 };
+
+#endif CAGE_H

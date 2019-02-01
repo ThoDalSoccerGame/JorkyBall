@@ -1,8 +1,11 @@
-/* Head de la classe Ballon du jeu soccer game */
+/* Head de la classe Ballon du jeu jorkyball */
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
+
+#ifndef BALLON_H
+#define BALLON_H
 
 class Ballon
 {
@@ -29,7 +32,7 @@ public:
 	void collision();
 
 	/* Mouvement du ballon lorsqu'il reçoit une force */
-	void mouvement_Indirect();
+	void mouvement_Indirect(double force_recu);
 
 	/* Savoir si le ballon est en l'air ou pas */
 	bool pos_AirorTerre();
@@ -42,5 +45,15 @@ public:
 
 private:
 
+	double force_renvoyer;
+	double force_recu;
+	double vitesse_actuelle;
+
+	bool CageorNot;
+	bool TerrainorNot;
+	bool AirorTerre;
+
 	// Les attributs seront évalué plus tard /!\ Gwendal réfléchit à la collision !!!!!!
 };
+
+#endif BALLON_H

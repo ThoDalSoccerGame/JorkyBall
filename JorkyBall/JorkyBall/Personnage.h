@@ -1,8 +1,11 @@
-/* Head de la classe Personnage du jeu soccer game */
+/* Head de la classe Personnage du jeu jorkyballl */
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
+
+#ifndef PERSONNAGE_H
+#define PERSONNAGE_H
 
 class Personnage
 {
@@ -14,7 +17,7 @@ public:
 
 	/********************** Méthode de la classe Personnage **********************/
 	/* Création du visuel du Personnage */
-	void create_Personnage();
+	void create_Personnage(int sens, int placement);
 
 	/* Renvoie une force auparavant reçu */
 	double return_Force();
@@ -43,10 +46,21 @@ public:
 	/* Savoir si le Personnage est en l'air ou pas */
 	bool pos_AirorTerre();
 
-	/* Savoir si le Personnage est attaquant ou défenseur */
-	bool attaquantOrdefenseur();
 
 private:
+	// 0 => Personnage de droite et 1 => Personnage de gauche
+	int sens;
+	// 0 => Gardien et 1 => Attaquant
+	int placement;
+
+	double force_renvoyer;
+	double force_recu;
+	double vitesse_actuelle;
+	double angle;
+
+	bool AirorTerre;
 
 	// Les attributs seront évalué plus tard /!\ Gwendal réfléchit à la collision !!!!!!
 };
+
+#endif PERSONNAGE_H

@@ -27,13 +27,13 @@
     </ClCompile>
     <ClCompile Include="Personnage.cpp" />
     <ClCompile Include="temp.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Fenetre.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ballon.h" />
     <ClInclude Include="Cage.h" />
     <ClInclude Include="Personnage.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Fenetre.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
