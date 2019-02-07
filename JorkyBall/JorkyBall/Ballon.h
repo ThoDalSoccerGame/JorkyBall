@@ -1,11 +1,11 @@
 /* Head de la classe Ballon du jeu jorkyball */
 
+#ifndef BALLON_H
+#define BALLON_H
+
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
-
-#ifndef BALLON_H
-#define BALLON_H
 
 class Ballon
 {
@@ -17,7 +17,7 @@ public:
 
 	/********************** Méthode de la classe Ballon **********************/
 	/* Création du visuel de la Balle */
-	void create_Ballon();
+	void create_Ballon() const;
 
 	/* Renvoie une force auparavant reçu */
 	double return_Force();

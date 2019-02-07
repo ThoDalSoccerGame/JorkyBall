@@ -1,18 +1,21 @@
-#include "Fenetre.h"
-#include "Ballon.h"
-#include "Cage.h"
-#include "Personnage.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
+#include "MultiHorsLigne.h"
 
 using namespace std;
-using namespace sf; 
+using namespace sf;
+
+/* Déclaration des variables globales */
+sf::Window window;
 
 int main()
 {
+#pragma region Structure
+/*
 // ZONE PAYANTE : *
 
+// BLOC INITIALISATION DE LA FENETRE 
 // BLOC CONNECTION
 	// BLOC MENU
 		// HORS LIGNE 
@@ -27,8 +30,20 @@ int main()
 		// SKIN
 			// CREATION DE SKIN *
 			// SKIN DE LA BOUTIQUE => pas de skin payant  
-		// PARAMETRE
-// BLOC INSCRIPTION
-		
+		// PARAMETRE*/
+#pragma endregion Structure
+
+
+		//Initialisation des classes 
+		MultiHorsLigne BLOC_MultiHorsLigne;
+
+		// BLOC INITIALISATION DE LA FENETRE
+		// BLOC INSCRIPTION 
+
+		// BLOC Multi Hors Ligne
+		BLOC_MultiHorsLigne.activation(); 
+
+
 	return 0;
 }
+

@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+/*#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -24,7 +24,7 @@ float dBPP = desktop.bitsPerPixel;
 /*char Cle[] = "MUSIQUE"; // Formé de caractères de 'A' à 'Z' uniquement !
 char Ori[] = "J'ADORE EC_OUTER LA RADIO TOUTE LA JOURNEE";
 char Cry[100], Dec[100]; // Au moins aussi longs que Ori
-int nCle = strlen(Cle), nTxt = strlen(Ori);*/
+int nCle = strlen(Cle), nTxt = strlen(Ori);
 
 #pragma region RESSOURCES
 void LoadGameImage() {
@@ -101,7 +101,7 @@ void Decrypter() { // Cry ==> Dec
 		int c = (int)Cry[i];
 		Dec[i] = ((c < 'A') || (c > 'Z')) ? c : 'A' + (78 + c - Cle[(++k) % nCle]) % 26;
 	} Dec[nTxt] = 0;
-}*/
+}
 
 string form(Text stringF, Text otherString, string stringForm) {
 	int stop = 0;
@@ -328,14 +328,14 @@ void login() {
 	}
 }
 
-int main()
+int maine()
 {
 	/*printf("Alphabet: A..Z; Clef: %sn", Cle);
 	printf("Texte original: %sn", Ori);
 	Crypter();
 	printf("Texte crypte  : %sn", Cry);
 	Decrypter();
-	printf("Texte decrypte: %sn", Dec);*/
+	printf("Texte decrypte: %sn", Dec);
 
 #pragma region WINDOW
 	// Creer une fenetre avec le même mode de video que celui du Desktop
@@ -436,3 +436,4 @@ int main()
 
 	return 0;
 }
+*/

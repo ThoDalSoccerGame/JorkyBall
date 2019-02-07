@@ -21,7 +21,6 @@ public :
 
 private:
 
-
 };
 
 #endif FENETRE_H

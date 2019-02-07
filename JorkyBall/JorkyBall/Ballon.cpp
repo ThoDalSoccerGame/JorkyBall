@@ -17,9 +17,8 @@ Ballon::~Ballon()
 	cout << "Destruction d'un objet de type Ballon" << endl;
 }
 
-
 /* Création du visuel du ballon */
-void Ballon::create_Ballon()
+void Ballon::create_Ballon() const
 {
 	cout << "Affichage du ballon" << endl;
 }
